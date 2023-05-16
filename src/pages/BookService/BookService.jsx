@@ -25,7 +25,7 @@ const BookService = () => {
     };
     console.log(booking);
 
-    fetch("http://localhost:5000/bookings/", {
+    fetch("https://car-doctor-server-green-kappa.vercel.app/bookings/", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(booking),
